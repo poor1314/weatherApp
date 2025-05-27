@@ -8,7 +8,7 @@ document.querySelector('#weatherForm').addEventListener('submit', function(e) {
 
 async function getWeather(userInput){
 
-  const result = await fetch("http://api.weatherapi.com/v1/current.json?key=801d1476f3c84c9683b30136252505&q=" + userInput);
+  const result = await fetch("https://api.weatherapi.com/v1/current.json?key=801d1476f3c84c9683b30136252505&q=" + userInput);
   const data = await result.json();
   const location =  data.location.name;
   const celsius = data.current.temp_c;
