@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="main">
+    <!-- Top Half: Form Section -->
+    <div class="top-half">
+      <h1>Weather App</h1>
+      <form 
+        id="weatherForm" 
+        aria-label="Search weather by city"
+        
+      >
+        <input 
+          type="text" 
+          id="cityInput" 
+          name="city" 
+          placeholder="Enter city" 
+          required 
+          aria-label="City name" 
+        />
+        <button type="submit">Search</button>
+      </form>
+    </div>
+
+    <!-- Bottom Half: Result Section -->
+    <div class="bottom-half" id="weatherResult">
+      <!-- Weather result will be dynamically inserted here -->
+    </div>
+  </div>
+</body>
+</html>
